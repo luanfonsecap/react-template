@@ -18,7 +18,7 @@ class AuthService {
     return this.api
       .post('', { email, password })
       .then(res => res.data)
-      .catch(err => err.response.data);
+      .catch(err => ({ status: err.response.status, data: err.response.data }));
   }
 }
 
