@@ -1,14 +1,14 @@
 import { AxiosResponse } from 'axios';
 import { all, takeLatest, select, call, put } from 'redux-saga/effects';
 
-import { ICartState ,
+import api from '@services/api';
+import {
+  ICartState,
   addProductToCartFailure,
   addProductToCartRequest,
   addProductToCartSuccess,
-, ActionTypes } from '../ducks/cart';
-import api from '../../services/api';
-
-
+  ActionTypes,
+} from '../ducks/cart';
 
 type CheckProductStockRequest = ReturnType<typeof addProductToCartRequest>;
 
@@ -22,8 +22,7 @@ function* checkProductStock({ payload }: CheckProductStockRequest) {
 
   const currentQuantity: number = yield select((state: ICartState) => {
     return (
-      state.items.find(item => item.product.id === product.id)?.quantity ??
-      0
+      state.items.find(item => item.product.id === product.id)?.quantity ?? 0
     );
   });
 
