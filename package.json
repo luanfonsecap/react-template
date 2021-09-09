@@ -4,8 +4,8 @@
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "cross-env CI=true lint-staged && yarn test --bail --findRealtedTests",
-      "pre-push": "cross-env CI=true yarn test --no-coverage --forceExit"
+      "pre-commit": "cross-env lint-staged && yarn test --bail --findRelatedTests",
+      "pre-push": "cross-env yarn test --no-coverage --forceExit"
     }
   },
   "lint-staged": {
@@ -50,7 +50,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
