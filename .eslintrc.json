@@ -43,7 +43,9 @@
     ],
     "prettier/prettier": "warn",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "react/no-unused-prop-types": "off"
   },
   "settings": {
     "import/resolver": {
