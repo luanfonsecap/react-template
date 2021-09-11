@@ -2,8 +2,9 @@ import { AxiosResponse } from 'axios';
 import { all, takeLatest, select, call, put } from 'redux-saga/effects';
 
 import api from '@services/api';
+
 import {
-  ICartState,
+  CartState,
   addProductToCartFailure,
   addProductToCartRequest,
   addProductToCartSuccess,
@@ -12,7 +13,7 @@ import {
 
 type CheckProductStockRequest = ReturnType<typeof addProductToCartRequest>;
 
-interface IStockResponse {
+interface StockResponse {
   id: number;
   quantity: number;
 }
@@ -20,13 +21,13 @@ interface IStockResponse {
 function* checkProductStock({ payload }: CheckProductStockRequest) {
   const { product } = payload;
 
-  const currentQuantity: number = yield select((state: ICartState) => {
+  const currentQuantity: number = yield select((state: CartState) => {
     return (
       state.items.find(item => item.product.id === product.id)?.quantity ?? 0
     );
   });
 
-  const availableStockResponse: AxiosResponse<IStockResponse> = yield call(
+  const availableStockResponse: AxiosResponse<StockResponse> = yield call(
     api.get,
     `stock/${product.id}`,
   );

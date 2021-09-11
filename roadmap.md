@@ -10,4 +10,4 @@
 - [ ] Write a good readme.
 - [ ] Create one example of test for each type of content.
 - [ ] Study a better structure to declare routes.
-- [ ] Add eslint import resolver.
+- [x] Add eslint import helpers.

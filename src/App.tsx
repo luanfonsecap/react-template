@@ -1,7 +1,8 @@
 import { BrowserRouter } from 'react-router-dom';
 
-import AppProvider from '@common/hooks';
 import { ConfirmationModal } from '@common/components/Modal';
+import AppProvider from '@common/hooks';
+
 import Routes from './routes';
 
 function App() {

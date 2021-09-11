@@ -1,21 +1,21 @@
 /* eslint-disable no-param-reassign */
-import { Reducer } from 'redux';
 import produce, { Draft } from 'immer';
+import { Reducer } from 'redux';
 
 // Action Types
-export interface IProduct {
+export interface Product {
   id: number;
   title: string;
   price: number;
 }
 
-export interface ICartItem {
-  product: IProduct;
+export interface CartItem {
+  product: Product;
   quantity: number;
 }
 
-export interface ICartState {
-  items: ICartItem[];
+export interface CartState {
+  items: CartItem[];
   failedStockCheck: number[];
 }
 
@@ -26,13 +26,13 @@ export enum ActionTypes {
 }
 
 // Reducer
-const INITIAL_STATE: ICartState = {
+const INITIAL_STATE: CartState = {
   items: [],
   failedStockCheck: [],
 };
 
-const CartReducer: Reducer<ICartState> = (_state = INITIAL_STATE, action) => {
-  return produce((_base: ICartState, draft: Draft<ICartState>) => {
+const CartReducer: Reducer<CartState> = (_state = INITIAL_STATE, action) => {
+  return produce((_base: CartState, draft: Draft<CartState>) => {
     switch (action.type) {
       case ActionTypes.ADD_PRODUCT_TO_CART_SUCCESS: {
         const { product } = action.payload;
@@ -42,7 +42,9 @@ const CartReducer: Reducer<ICartState> = (_state = INITIAL_STATE, action) => {
         );
 
         if (productInCartIndex >= 0) {
-          return draft.items[productInCartIndex].quantity++;
+          draft.items[productInCartIndex].quantity += 1;
+
+          return draft.items[productInCartIndex];
         }
 
         return draft.items.push({ product, quantity: 1 });
@@ -60,7 +62,7 @@ const CartReducer: Reducer<ICartState> = (_state = INITIAL_STATE, action) => {
 };
 
 // Action Creators
-export function addProductToCartRequest(product: IProduct) {
+export function addProductToCartRequest(product: Product) {
   return {
     type: ActionTypes.ADD_PRODUCT_TO_CART_REQUEST,
     payload: {
@@ -69,7 +71,7 @@ export function addProductToCartRequest(product: IProduct) {
   };
 }
 
-export function addProductToCartSuccess(product: IProduct) {
+export function addProductToCartSuccess(product: Product) {
   return {
     type: ActionTypes.ADD_PRODUCT_TO_CART_SUCCESS,
     payload: {
