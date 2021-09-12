@@ -62,6 +62,8 @@ A generic structure that can supply most scenarios.
 - Conventional Commits - https://www.conventionalcommits.org/en/v1.0.0/
 - Adapter (for third party libraries, to isolate components) - https://refactoring.guru/design-patterns/adapter
 
+<br>
+
 ## :bicyclist: Road Map
 
 <i>A road map to be incremented everyday.</i>
