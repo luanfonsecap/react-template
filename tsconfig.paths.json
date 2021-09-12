@@ -2,10 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@common/*": ["./src/common/*"],
-      "@components/*": ["./src/common/components/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@services/*": ["./src/common/services/*"],
+      "@common/*": ["./src/modules/common/*"],
+      "@components/*": ["./src/modules/common/components/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@services/*": ["./src/modules/common/services/*"],
       "@assets/*": ["./src/assets/*"]
     }
   }

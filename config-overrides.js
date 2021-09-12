@@ -5,10 +5,10 @@ module.exports = function override(config) {
     ...config.resolve,
     alias: {
       ...config.alias,
-      '@common': path.resolve(__dirname, 'src/common'),
-      '@components': path.resolve(__dirname, 'src/common/components'),
-      '@pages': path.resolve(__dirname, 'src/pages'),
-      '@services': path.resolve(__dirname, 'src/common/services'),
+      '@common': path.resolve(__dirname, 'src/modules/common'),
+      '@components': path.resolve(__dirname, 'src/modules/common/components'),
+      '@modules': path.resolve(__dirname, 'src/modules'),
+      '@services': path.resolve(__dirname, 'src/modules/common/services'),
       '@assets': path.resolve(__dirname, 'src/assets'),
     },
   };

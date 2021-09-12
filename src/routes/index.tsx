@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
 
-import Home from '../pages/Home';
+import Home from '../modules/Home';
 import Route from './Route';
 
 const Routes = () => (
