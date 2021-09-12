@@ -1,5 +1,12 @@
+import { Title } from './components/Title';
+import { Container } from './styles';
+
 function Home() {
-  return <h1>Home</h1>;
+  return (
+    <Container>
+      <Title title="Home" />
+    </Container>
+  );
 }
 
 export default Home;
