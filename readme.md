@@ -73,6 +73,7 @@ A generic structure that can supply most scenarios.
 - [ ] Study a better structure to declare routes.
 - [x] Add eslint import helpers.
 - [ ] Semantic Versioning.
+- [ ] Add commitizen.
 
 <br>
 

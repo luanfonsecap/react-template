@@ -12,3 +12,5 @@
 - [ ] Study a better structure to declare routes.
 - [x] Add eslint import helpers.
 - [ ] Semantic Versioning.
+- [ ] Introduce atomic commits.
+- [ ] Add commitizen.
