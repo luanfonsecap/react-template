@@ -72,6 +72,7 @@ A generic structure that can supply most scenarios.
 - [ ] Create one example of test for each type of content.
 - [ ] Study a better structure to declare routes.
 - [x] Add eslint import helpers.
+- [ ] Semantic Versioning.
 
 <br>
 
