@@ -1,0 +1,2 @@
+# react-web-template
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/57c93163b5c24c72a26cb64589a8d437)](https://app.codacy.com/gh/luanfonsecap/react-web-template?utm_source=github.com&utm_medium=referral&utm_content=luanfonsecap/react-web-template&utm_campaign=Badge_Grade_Settings)
