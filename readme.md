@@ -60,6 +60,7 @@ A generic structure that can supply most scenarios.
 
 - Ducks Modular Redux - https://github.com/erikras/ducks-modular-redux
 - Conventional Commits - https://www.conventionalcommits.org/en/v1.0.0/
+- Adapter (for third party libraries, to isolate components) - https://refactoring.guru/design-patterns/adapter
 
 ## :bicyclist: Road Map
 
