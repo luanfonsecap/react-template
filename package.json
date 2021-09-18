@@ -30,7 +30,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.14",
-    "axios": "^q0.21.1",
+    "axios": "^0.21.1",
     "cross-env": "7.0.3",
     "framer-motion": "^4",
     "immer": "9.0.5",
