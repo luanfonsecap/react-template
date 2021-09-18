@@ -13,12 +13,6 @@
   <a href="https://www.codacy.com/gh/luanfonsecap/react-web-template/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=luanfonsecap/react-web-template&amp;utm_campaign=Badge_Grade">
     <img src="https://app.codacy.com/project/badge/Grade/e5f63167310c42ba9cd01ecd71fceb2c"/>
   </a>
-  
-<!--   <p align="center">
-    <a href="https://app.netlify.com/sites/jokes-norris/deploys">
-      <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/2808add5-ff8e-441f-9f51-1226c7031112/deploy-status">
-    </a>
-  </p> -->
 
   <br>
 
