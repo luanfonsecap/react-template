@@ -1,13 +1,12 @@
-import React from 'react';
-import { Switch } from 'react-router-dom';
+import HomeRoutes from '@modules/Home/routes';
+import LoginRoutes from '@modules/Login/routes';
 
-import Home from '../modules/Home';
-import Route from './Route';
+import { RouteWithSubRoutesProps } from './RouteWithSubRoutes';
 
-const Routes = () => (
-  <Switch>
-    <Route path="/" exact component={Home} />
-  </Switch>
-);
+const ROUTES: RouteWithSubRoutesProps[] = [
+  { path: '/', key: 'ROOT', exact: true, component: () => <h1>Index</h1> },
+  ...LoginRoutes,
+  ...HomeRoutes,
+];
 
-export default Routes;
+export default ROUTES;
