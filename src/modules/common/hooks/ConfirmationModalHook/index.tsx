@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useState, useContext } from 'react';
+import { createContext, useCallback, useState, useContext } from 'react';
 import { IconType } from 'react-icons';
 
 import { WithChildren } from '@common/interfaces/withChildren';
