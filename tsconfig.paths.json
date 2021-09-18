@@ -6,7 +6,8 @@
       "@components/*": ["./src/modules/common/components/*"],
       "@modules/*": ["./src/modules/*"],
       "@services/*": ["./src/modules/common/services/*"],
-      "@assets/*": ["./src/assets/*"]
+      "@assets/*": ["./src/assets/*"],
+      "@routes/*": ["./src/routes/*"]
     }
   }
 }

@@ -10,6 +10,7 @@ module.exports = function override(config) {
       '@modules': path.resolve(__dirname, 'src/modules'),
       '@services': path.resolve(__dirname, 'src/modules/common/services'),
       '@assets': path.resolve(__dirname, 'src/assets'),
+      '@routes': path.resolve(__dirname, 'src/routes'),
     },
   };
   return config;
