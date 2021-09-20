@@ -33,6 +33,8 @@ This repository contains a boilerplate for React web apps started with CRA, to p
 It is being built based on my studies in frontend, architecture and React, looking for a clean and scalable architecture.
 <br />
 A generic structure that can supply most scenarios.
+<br />
+<i>PS.: Using this repository to apply techniques, tricks and best practices that I'm learning too.</i>
 
 <br>
 
@@ -67,7 +69,7 @@ A generic structure that can supply most scenarios.
 - [ ] Create a identity to use in examples for project (E.g. a cat for NestJS, FooBar for concepts).
 - [x] Write a good readme.
 - [ ] Create one example of test for each type of content.
-- [ ] Study a better structure to declare routes.
+- [x] Study a better structure to declare routes.
 - [x] Add eslint import helpers.
 - [ ] Semantic Versioning.
 - [ ] Add commitizen.
